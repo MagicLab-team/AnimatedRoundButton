@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ao1-ab-u6g">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="MZZ-TJ-Vu9">
+            <objects>
+                <viewController id="ao1-ab-u6g" customClass="MenuVC" customModule="AnimatedRoundButtonExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N5c-uw-67X"/>
+                        <viewControllerLayoutGuide type="bottom" id="EG0-LQ-GJm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ilg-KX-b8H">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rub-3D-e1g" customClass="AnimatedRoundButton" customModule="AnimatedRoundButton">
+                                <rect key="frame" x="233.5" y="87.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZkG-cp-g7Q"/>
+                                    <constraint firstAttribute="width" secondItem="rub-3D-e1g" secondAttribute="height" id="yBl-My-grO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingPercent">
+                                        <real key="value" value="0.050000000000000003"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Video stream"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-2X-65H" customClass="AnimatedRoundButton" customModule="AnimatedRoundButton">
+                                <rect key="frame" x="48.5" y="112" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4gg-FD-eUR"/>
+                                    <constraint firstAttribute="width" secondItem="kRc-2X-65H" secondAttribute="height" multiplier="1:1" id="6tx-zd-i2z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingPercent">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Menu"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pH3-e2-tOF" customClass="AnimatedRoundButton" customModule="AnimatedRoundButton">
+                                <rect key="frame" x="468.5" y="112" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="APu-co-PaS"/>
+                                    <constraint firstAttribute="width" secondItem="pH3-e2-tOF" secondAttribute="height" multiplier="1:1" id="nf2-iM-FgL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingPercent">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Demo"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rub-3D-e1g" firstAttribute="centerX" secondItem="Ilg-KX-b8H" secondAttribute="centerX" id="49G-E7-zNZ"/>
+                            <constraint firstItem="rub-3D-e1g" firstAttribute="centerY" secondItem="Ilg-KX-b8H" secondAttribute="centerY" id="B6J-RU-vJS"/>
+                            <constraint firstItem="pH3-e2-tOF" firstAttribute="centerY" secondItem="rub-3D-e1g" secondAttribute="centerY" id="Zb4-t6-AdF"/>
+                            <constraint firstItem="rub-3D-e1g" firstAttribute="leading" secondItem="kRc-2X-65H" secondAttribute="trailing" constant="35" id="mN1-QE-Mfw"/>
+                            <constraint firstItem="pH3-e2-tOF" firstAttribute="leading" secondItem="rub-3D-e1g" secondAttribute="trailing" constant="35" id="pgT-tE-5i7"/>
+                            <constraint firstItem="pH3-e2-tOF" firstAttribute="width" secondItem="pH3-e2-tOF" secondAttribute="height" multiplier="1:1" id="xPz-PZ-iGf"/>
+                            <constraint firstItem="kRc-2X-65H" firstAttribute="centerY" secondItem="rub-3D-e1g" secondAttribute="centerY" id="zEf-T7-tLh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2dl-Dj-ZNc"/>
+                    <connections>
+                        <outlet property="demoButton" destination="pH3-e2-tOF" id="Jvf-mL-fXJ"/>
+                        <outlet property="menuButton" destination="kRc-2X-65H" id="4lc-OD-KDb"/>
+                        <outlet property="streamButton" destination="rub-3D-e1g" id="KYp-fl-r6Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUE-kV-NG9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="190"/>
+        </scene>
+    </scenes>
+</document>
