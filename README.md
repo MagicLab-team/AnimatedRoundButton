@@ -58,4 +58,4 @@ button.scaleFactors[.down] = 0.7
 
 ## License
 
-Reusable is released under the MIT license. See [LICENSE](https://github.com/MagicLab-team/AnimatedRoundButton/blob/master/LICENSE) for details.
+AnimatedRoundButton is released under the MIT license. See [LICENSE](https://github.com/MagicLab-team/AnimatedRoundButton/blob/master/LICENSE) for details.
